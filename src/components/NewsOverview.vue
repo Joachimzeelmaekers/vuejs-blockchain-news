@@ -32,17 +32,14 @@ export default {
           this.result = "Something went wrong, try again please.";
         }
         const data = result.data.items;
-        console.log(data[0]);
         this.cards = data;
         return result;
       })
-      .catch(() => {
-        console.error(error);
+      .catch(error => {
         this.cards = [];
         return error;
       })
       .finally(() => {
-        console.log("final");
         this.isLoading = false;
       });
   }

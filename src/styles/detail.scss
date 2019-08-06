@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300, 400, 700');
+.back-button {
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    margin: 0;
+    margin-left: 0.5em;
+  }
+}
+.news-card {
+  padding: 1em;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  .wrapper {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+
+    .image-container {
+      width: 100%;
+      margin: 0 auto;
+      img {
+        width: 60%;
+        height: 400px;
+        object-fit: fill;
+        overflow: hidden;
+      }
+    }
+
+    .title-container {
+      padding: 0.5em;
+    }
+  }
+
+  .data {
+    .story {
+      padding: 1em;
+      text-align: left;
+    }
+  }
+}
