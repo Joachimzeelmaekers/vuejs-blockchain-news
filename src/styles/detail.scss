@@ -37,6 +37,15 @@
 
     .title-container {
       padding: 0.5em;
+
+      .date {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          margin-left: 0.3em;
+        }
+      }
     }
   }
 

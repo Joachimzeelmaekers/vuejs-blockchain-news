@@ -15,16 +15,19 @@
           <div class="title-container">
             <span class="symbol">{{details.fromSymbol}}</span>
             <h1 class="title">{{details.headline}}</h1>
-            <!-- <span class="day">{{details.publishedAt | moment('DD') }}</span>
+            <div class="date">
+              <span class="day">Published at</span>
+              <span class="day">{{details.publishedAt | moment('DD') }}</span>
               <span class="month">{{details.publishedAt | moment('MMMM') }}</span>
-            <span class="year">{{details.publishedAt | moment('YYYY') }}</span>-->
+              <span class="year">{{details.publishedAt | moment('YYYY') }}</span>
+            </div>
           </div>
           <div class="data">
             <p class="story" v-html="details.story"></p>
           </div>
+          <a target="_blank" :href="`${details.url}`">Read the full article</a>
         </div>
       </div>
-      <!-- <a target="_blank" :href="`${details.url}`">Open article</a> -->
     </div>
   </div>
 </template>
