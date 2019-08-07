@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <router-link class="back-button" to="/">

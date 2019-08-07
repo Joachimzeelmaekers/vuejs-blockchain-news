@@ -1,9 +1,6 @@
 <template>
   <div class="card news-card">
-    <div
-      class="wrapper"
-      v-bind:style="{ 'background': 'url(' + card.imageURL + ')  center / cover no-repeat' }"
-    >
+    <div class="wrapper">
       <div class="header">
         <div class="date">
           <span class="day">{{card.publishedAt | moment('DD') }}</span>
